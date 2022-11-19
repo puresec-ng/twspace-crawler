@@ -45,11 +45,11 @@ command
     const masterPlaylistUrl = `${PeriscopeUtil.getMasterPlaylistUrl(dynamicPlaylistUrl)}`
     const accessChatData = await PeriscopeApi.getAccessChat(liveStreamStatus.chatToken)
     response = {
-      masterPlaylistUrl,
-      accessChatData,
-      dynamicPlaylistUrl,
-      metadata,
-      liveStreamStatus,
+      'master_playlist_url': masterPlaylistUrl,
+      'access_chat_data' :accessChatData,
+      'dynamic_playlist_url': dynamicPlaylistUrl,
+      'meta': metadata,
+      'livestream_status': liveStreamStatus,
     }
     console.log(response)
     // new SpaceCaptionsDownloader(spaceId, endpoint, token).download()
