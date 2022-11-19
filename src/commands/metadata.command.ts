@@ -49,9 +49,9 @@ command
       'access_chat_data' :accessChatData,
       'dynamic_playlist_url': dynamicPlaylistUrl,
       'meta': metadata,
-      'livestream_status': liveStreamStatus,
+      'livestream_status':liveStreamStatus,
     }
-    console.log(response)
+    console.log(JSON.stringify(response))
     // new SpaceCaptionsDownloader(spaceId, endpoint, token).download()
   })
 
